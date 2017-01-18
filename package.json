@@ -1,7 +1,7 @@
 {
-  "name": "parse-server-push-adapter",
-  "version": "1.2.0",
-  "description": "Base parse-server-push-adapter",
+  "name": "parse-server-push-adapter-token",
+  "version": "1.0.1",
+  "description": "Base parse-server-push-adapter with ios token based push notification support",
   "main": "lib/index.js",
   "files": [
     "lib/"
@@ -14,13 +14,16 @@
   "keywords": [
     "parse-server",
     "push",
-    "adapter"
+    "adapter",
+    "ios",
+    "token",
+    "notification"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/parse-server-modules/parse-server-push-adapter.git"
+    "url": "git+https://github.com/asif13/parse-server-push-adapter.git"
   },
-  "author": "Parse",
+  "author": "Asif Junaid",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -32,7 +35,7 @@
     "jasmine": "^2.4.1"
   },
   "dependencies": {
-    "apn": "^1.7.8",
+    "apn": "^2.1.2",
     "node-gcm": "^0.14.0",
     "npmlog": "^2.0.3",
     "parse": "^1.8.1"

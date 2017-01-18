@@ -3,6 +3,7 @@ import Parse from 'parse';
 import log from 'npmlog';
 import APNS from './APNS';
 import GCM from './GCM';
+import ApnsToken from './ApnsToken';
 import { classifyInstallations } from './PushAdapterUtils';
 
 const LOG_PREFIX = 'parse-server-push-adapter';
@@ -27,7 +28,7 @@ export class ParsePushAdapter {
       }
       switch (pushType) {
         case 'ios':
-          this.senderMap[pushType] = new APNS(pushConfig[pushType]);
+          this.senderMap[pushType] = new ApnsToken(pushConfig[pushType]);
           break;
         case 'android':
         case 'fcm':
