@@ -4,9 +4,9 @@ Push adapter for parse-server with support for ios token based push notification
 
 ### Token based authentication
 Parameters need to suppurt this are: 
-tokenKey The Path of the apns key which is in p8 format
-tokenKeyId  The Key ID of the p8 file (available at https://developer.apple.com/account/ios/certificate/key)
-tokenTeamId The Team ID of your Apple Developer Account (available at https://developer.apple.com/account/#/membership/)
+* tokenKey The Path of the apns key which is in p8 format
+* tokenKeyId  The Key ID of the p8 file (available at https://developer.apple.com/account/ios/certificate/key)
+* tokenTeamId The Team ID of your Apple Developer Account (available at https://developer.apple.com/account/#/membership/)
 than initialize the adapter with 
 ```
 var adapter = require('parse-server-push-adapter-token').ParsePushAdapter;
